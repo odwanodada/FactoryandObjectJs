@@ -1,42 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        //Constructor Function
-        /*
-        function CreateRectangle(len,width){
-            this.length=len;this.widths=width;this.area=function(){
-                return this.length*this.widths};
-        };
+        //Factory function
+        function createAddress(street, city, zipcode) {
+                return street: street, city: city, zipCode: zipcode
+                //Can be shortened to return street, city, zipcode
 
-
-        const rec11 = new CreateRectangle(5,2); 
-        
-        console.log(rec11.area())
-        */
-
-        function CreateSquare(s,s){
-            this.side = s;this.side=s;this.area=function(){
-                return this.side*this.side
-            };
-        };
-
-        const square1 = new CreateSquare(5,5);
-
-        console.log(square1.area())
-        
-
- 
-
-
-
-        
+                let address = createAddress("knutsford", "plumstead", "7800");
+                console.log(address)
     </script>
-    
+
 </body>
+
 </html>

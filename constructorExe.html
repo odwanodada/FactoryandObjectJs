@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function CreateAddress(street,city,code){
+            this.street = street;
+            this.city = city;
+            this.code = code; 
+        };
+
+        let address = new CreateAddress("Wilton","Cape Town","7750");
+
+        console.log(address);
+         
+             //Constructor Function
+        /*
+        function CreateRectangle(len,width){
+            this.length=len;this.widths=width;this.area=function(){
+                return this.length*this.widths};
+        };
+
+
+        const rec11 = new CreateRectangle(5,2); 
+        
+        console.log(rec11.area())
+        */
+        
+        /*
+        function CreateSquare(s,s){
+            this.side = s;this.side=s;this.area=function(){
+                return this.side*this.side
+            };
+        };
+
+        const square1 = new CreateSquare(5,5);
+
+        console.log(square1.area())
+        */
+
+
+    </script>
+    
+</body>
+</html>
