@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let address = {
+            street:"Wilton",
+            city:"Cape Town",
+            zip: 7750
+
+        };
+
+        function ShowAddress(address){
+            for(let i in address){
+                console.log(i, address[i]);
+                
+            }
+                  
+        };
+
+        ShowAddress(address);
+
+        let blogspot = {
+            title:"Money",
+            body:"Bank",
+            authorship:"Odwa",
+            views: {
+                comments: 56,
+
+            },
+            isLive: true
+            
+        };
+
+        console.log(blogspot);
+
+        //Factory function
+        /*
+          object and factory function
+        let triangle = {base:8,height:4, 
+                area:function(){
+                    return(this.base*0.5)*this.height;
+                    }
+                };
+
+                triangle.area();
+
+
+        AreaOfRectangle
+
+        let rectangle1 = {width:5,length:8,
+                  area:function(){
+                      return rectangle1.length * rectangle1.width;
+                    }
+                };
+
+                rectangle1.area();
+
+
+        Factory Function to calculate the area of two rectangle
+
+        function createRectangle(len,width){
+                     return{len,width,area(){return len*width
+                     
+                    }
+                };
+            };
+
+            const rec1 = createRectangle(5,3);
+            const rec2 = createRectangle(7,3);
+
+            rec1.area();
+            rec2.area();
+
+
+
+        */
+
+
+
+
+    </script>
+</body>
+</html>
